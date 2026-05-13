@@ -88,6 +88,49 @@
         'ratingSub'      => 'GOVERNMENT RATING',
     ])
 
+    @include('components.sections.featured-works', [
+ 
+    'eyebrow'       => 'FEATURED WORK',
+    'headingNormal' => 'Iconic',
+    'headingItalic' => 'Structures.',
+ 
+    'filters' => [
+        ['label' => 'ALL WORKS',      'active' => true],
+        ['label' => 'HOTELS'],
+        ['label' => 'INFRASTRUCTURE'],
+        ['label' => 'HEALTHCARE'],
+    ],
+ 
+    'projects' => [
+ 
+        // ── Large featured card (left) ──────────────────────────────────
+        [
+            'title'    => 'Soaltee Sibkrim Hotel',
+            'meta'     => 'NEPALGUNJ / 117,000 SQ. FT.',
+            'category' => 'HOSPITALITY',
+            'image'    => asset('images/portfolio/soaltee.jpg'),
+            'url'      => '#soaltee',
+        ],
+ 
+        // ── Top-right card ──────────────────────────────────────────────
+        [
+            'title'    => 'Dusit Princess Hotel',
+            'category' => 'LUXURY BOUTIQUE',
+            'image'    => asset('images/portfolio/dusit.jpg'),
+            'url'      => '#dusit',
+        ],
+ 
+        // ── Bottom-right card ───────────────────────────────────────────
+        [
+            'title'    => 'Kathmandu World School',
+            'category' => 'INSTITUTIONAL',
+            'image'    => asset('images/portfolio/kws.jpg'),
+            'url'      => '#kws',
+        ],
+ 
+    ],
+])
+
     {{-- Section scripts pushed via @push('scripts') --}}
     @stack('scripts')
 
