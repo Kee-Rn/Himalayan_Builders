@@ -40,7 +40,12 @@
         }
         .btn-primary:hover .btn-arrow { transform: translateX(4px); }
         .btn-arrow { display: inline-block; transition: transform 0.2s ease; }
+        /* About section heading — same scale as hero */
+        .about-heading-fluid { font-size: clamp(32px, 4.5vw, 68px); }
     </style>
+
+    {{-- Section-specific styles pushed via @push('styles') --}}
+    @stack('styles')
 </head>
 <body class="antialiased">
 
@@ -56,6 +61,27 @@
         'ctaSecondary'    => 'OUR VISION',
         'ctaSecondaryUrl' => '#vision',
     ])
+
+    @include('components.sections.about', [
+        'tagline'        => 'THE LEGACY',
+        'headingNormal'  => 'Pioneering',
+        'headingItalic'  => 'Design,',
+        'headingItalic2' => 'Build',
+        'headingEnd'     => 'Excellence in Nepal.',
+        'body1'          => 'Himalayan Builders & Engineers (HBE) stands as a titan in the civil engineering landscape, redefining the skyline of Nepal through innovation and uncompromising quality.',
+        'body2'          => 'As the pioneers of the design-build model in the region, we provide a seamless, integrated approach that bridges the gap between architectural vision and structural reality.',
+        'ctaLabel'       => 'OUR FULL STORY',
+        'ctaUrl'         => '#story',
+        'imageSrc'       => asset('images/about-building.jpg'),
+        'imageAlt'       => 'Himalayan Builders & Engineers headquarters building',
+        'badgeNumber'    => '01',
+        'badgeLabel'     => 'CERTIFIED SAFETY STANDARDS',
+        'ratingLabel'    => 'A-Class',
+        'ratingSub'      => 'GOVERNMENT RATING',
+    ])
+
+    {{-- Section scripts pushed via @push('scripts') --}}
+    @stack('scripts')
 
 </body>
 </html>
