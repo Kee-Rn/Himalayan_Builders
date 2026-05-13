@@ -208,6 +208,14 @@
     ],
 ])
 
+@include('components.sections.cta-banner', [
+    'headingNormal' => "Let's Build",
+    'headingItalic' => 'the Impossible.',
+    'bgImage'       => asset('images/cta-building.jpg'),
+    'ctaPrimary'    => ['label' => 'CONTACT OUR EXPERTS', 'url' => '#contact'],
+    'ctaSecondary'  => ['label' => 'DOWNLOAD PORTFOLIO',  'url' => '#portfolio'],
+])
+
     {{-- Section scripts pushed via @push('scripts') --}}
     @stack('scripts')
 
