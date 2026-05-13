@@ -131,6 +131,51 @@
     ],
 ])
 
+@include('components.sections.ecosystem', [
+ 
+    'eyebrow'       => 'VERTICAL INTEGRATION',
+    'headingNormal' => 'The Himalayan',
+    'headingItalic' => 'Ecosystem.',
+    'body'          => 'By owning the supply chain, we eliminate uncertainty. Our sister companies provide the raw strength and engineering precision that fuel our global ambitions.',
+ 
+    'companies' => [
+        [
+            'number'      => '01',
+            'label'       => 'HIMALAYAN BRICKS LTD.',
+            'active'      => true,
+            'title'       => 'Himalayan Bricks',
+            'description' => "The region's first fully automated brick plant, producing 100,000 units daily with Swiss engineering precision.",
+            'image'       => asset('images/ecosystem/bricks.jpg'),
+            'logoLine1'   => 'Himalayan',
+            'logoLine2'   => 'Brick',
+        ],
+        [
+            'number'      => '02',
+            'label'       => 'HBE ENGINEERING',
+            'title'       => 'HBE Engineering',
+            'description' => 'Providing structural and MEP engineering excellence across every HBE project and beyond.',
+            'image'       => asset('images/ecosystem/engineering.jpg'),
+            'logoLine1'   => 'HBE',
+            'logoLine2'   => 'Engineering',
+        ],
+    ],
+ 
+])
+
+@include('components.sections.institutional-trust', [
+    'eyebrow'       => 'GLOBAL AUTHORITY',
+    'headingNormal' => 'Trusted by',
+    'headingItalic' => 'World Institutions.',
+    'clients' => [
+        ['name' => 'US Army Corps of Engineers',       'image' => asset('images/logos/usace.png')],
+        ['name' => 'U.S. Department of State (OBO)',   'image' => asset('images/logos/us-state-dept.png')],
+        ['name' => 'NAVFAC',                           'image' => asset('images/logos/navfac.png')],
+        ['name' => 'TATA',                             'image' => asset('images/logos/tata.png')],
+        ['name' => 'The Soaltee Kathmandu',            'image' => asset('images/logos/soaltee.png')],
+        ['name' => 'Sipradi',                          'image' => asset('images/logos/sipradi.png')],
+    ],
+])
+
     {{-- Section scripts pushed via @push('scripts') --}}
     @stack('scripts')
 
