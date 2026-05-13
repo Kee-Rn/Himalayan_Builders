@@ -4,7 +4,7 @@
     Include:  @include('components.sections.about', [...])
 --}}
 
-<section id="about" class="w-full bg-[#EBEBEB] px-12 py-20" aria-labelledby="about-heading">
+<section id="about" class="w-full bg-[#EBEBEB] px-12 pt-[157px] pb-20" aria-labelledby="about-heading">
 
     <div class="max-w-[1344px] mx-auto flex flex-col lg:flex-row lg:items-start gap-16">
 

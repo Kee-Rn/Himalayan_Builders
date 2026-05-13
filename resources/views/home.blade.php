@@ -41,7 +41,7 @@
         .btn-primary:hover .btn-arrow { transform: translateX(4px); }
         .btn-arrow { display: inline-block; transition: transform 0.2s ease; }
         /* About section heading — same scale as hero */
-        .about-heading-fluid { font-size: clamp(32px, 4.5vw, 68px); }
+        .about-heading-fluid { font-size: clamp(36px, 4.5vw, 68px); }
     </style>
 
     {{-- Section-specific styles pushed via @push('styles') --}}
@@ -60,6 +60,14 @@
         'ctaPrimaryUrl'   => '#portfolio',
         'ctaSecondary'    => 'OUR VISION',
         'ctaSecondaryUrl' => '#vision',
+    ])
+
+    @include('components.sections.stats', [
+        'stats' => [
+            ['number' => '400+', 'label' => 'GLOBAL PROJECTS DELIVERED'],
+            ['number' => '30+',  'label' => 'YEARS OF ENGINEERING MASTERY'],
+            ['number' => 'Top 5','label' => 'NATIONAL RANK (A-CLASS)'],
+        ],
     ])
 
     @include('components.sections.about', [
