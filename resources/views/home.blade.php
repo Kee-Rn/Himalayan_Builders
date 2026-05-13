@@ -176,6 +176,38 @@
     ],
 ])
 
+@include('components.sections.insights', [
+    'eyebrow'        => 'KNOWLEDGE BASE',
+    'headingItalic'  => 'Insights.',
+    'allArticlesUrl' => '/insights',
+    'articles' => [
+        [
+            'category' => 'ENGINEERING',
+            'date'     => 'MAR 2026',
+            'title'    => 'The Future of Earthquake-Resistant Design in High-Altitude Terrains.',
+            'excerpt'  => 'Exploring the structural innovations deployed in our recent institutional projects across the Himalayas.',
+            'image'    => asset('images/insights/earthquake-resistant.jpg'),
+            'url'      => '#article-1',
+        ],
+        [
+            'category' => 'HEALTHCARE',
+            'date'     => 'FEB 2026',
+            'title'    => 'Integrated Design-Build: Accelerating Healthcare Infrastructure.',
+            'excerpt'  => 'How our unified approach reduced the construction timeline for Kathmandu International Hospital by 15%.',
+            'image'    => asset('images/insights/healthcare-build.jpg'),
+            'url'      => '#article-2',
+        ],
+        [
+            'category' => 'SUSTAINABILITY',
+            'date'     => 'JAN 2026',
+            'title'    => 'Sustainable Materials: The Role of Automated Brick Manufacturing.',
+            'excerpt'  => 'Analyzing the carbon footprint reduction achieved through Himalayan Bricks\' eco-friendly production line.',
+            'image'    => asset('images/insights/brick-manufacturing.jpg'),
+            'url'      => '#article-3',
+        ],
+    ],
+])
+
     {{-- Section scripts pushed via @push('scripts') --}}
     @stack('scripts')
 
