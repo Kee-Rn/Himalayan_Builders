@@ -1,0 +1,8 @@
+/*
+ * app.css
+ * Tailwind is loaded via CDN in layouts/app.blade.php.
+ * Custom theme values (fonts, colours) are registered in the
+ * tailwind.config block in that same file.
+ *
+ * Add any project-wide non-Tailwind base styles below.
+ */
