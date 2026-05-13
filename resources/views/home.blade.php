@@ -216,6 +216,21 @@
     'ctaSecondary'  => ['label' => 'DOWNLOAD PORTFOLIO',  'url' => '#portfolio'],
 ])
 
+@include('components.sections.footer', [
+    'logoSrc' => asset('images/logo.png'),
+    'contact' => [
+        'heading' => 'GET IN TOUCH',
+        'address' => 'Bhakti Thapa Sadak-45 KMC – 11, Babarmahal, Kathmandu, Nepal',
+        'phone'   => '+977 15705009',
+        'email'   => 'admin@himalayanbuilders.com',
+    ],
+    'socials' => [
+        ['label' => 'Facebook',  'url' => 'https://facebook.com/himalayanbuilders',  'icon' => '<svg .../>'],
+        ['label' => 'LinkedIn',  'url' => 'https://linkedin.com/company/himalayanbuilders', 'icon' => '<svg .../>'],
+        ['label' => 'Instagram', 'url' => 'https://instagram.com/himalayanbuilders', 'icon' => '<svg .../>'],
+    ],
+])
+
     {{-- Section scripts pushed via @push('scripts') --}}
     @stack('scripts')
 
