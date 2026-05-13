@@ -8,8 +8,11 @@
 
 <section
     class="relative w-full overflow-hidden flex items-end"
-    style="min-height: 716.8px;"
+    style="min-height: 716.8px; padding-top: 97px;"
 >
+    {{-- Navbar overlaid on top of hero --}}
+    @include('components.sections.navbar')
+
     {{-- Background gradient (no video file yet — swap in when ready) --}}
     <div class="absolute inset-0 z-0" aria-hidden="true">
         <video
