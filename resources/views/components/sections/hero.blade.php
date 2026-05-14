@@ -27,10 +27,19 @@
             class="absolute inset-0"
             style="background: linear-gradient(
                 180deg,
-                rgba(28,28,30,0.82)     0%,
-                rgba(90,90,90,0.55)    45%,
-                rgba(210,205,200,0.70) 75%,
-                rgba(235,232,228,0.90) 100%
+                rgba(10,10,10,1.00)   0%,
+                rgba(10,10,10,0.00)  50%,
+                rgba(10,10,10,0.00) 100%
+            );"
+        ></div>
+        {{-- Bottom dark fade --}}
+        <div
+            class="absolute inset-0"
+            style="background: linear-gradient(
+                0deg,
+                rgba(10,10,10,1.00)   0%,
+                rgba(10,10,10,0.00)  50%,
+                rgba(10,10,10,0.00) 100%
             );"
         ></div>
     </div>

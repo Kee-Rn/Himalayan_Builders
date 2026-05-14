@@ -10,7 +10,7 @@
 <style>
     .nav-link-item {
         position: relative;
-        font-family: 'Barlow', sans-serif;
+        font-family: 'Instrument Sans', sans-serif;
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 0.12em;
@@ -44,7 +44,7 @@
     }
 
     .nav-quote-btn {
-        font-family: 'Barlow', sans-serif;
+        font-family: 'Instrument Sans', sans-serif;
         font-size: 11px;
         font-weight: 700;
         letter-spacing: 0.13em;
