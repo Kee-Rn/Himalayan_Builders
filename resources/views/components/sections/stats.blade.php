@@ -33,7 +33,7 @@ $stats ??= [
             @endif
 
             <div class="flex-1 flex flex-col justify-center gap-2 px-12 py-8">
-                <span class="font-display font-bold text-[#C0392B] leading-none stats-number-fluid">
+                <span class="font-display font text-[#C0392B] leading-none stats-number-fluid">
                     {{ $stat['number'] }}
                 </span>
                 <span class="font-body text-[11px] font-semibold tracking-[0.18em] uppercase text-[#999]">

@@ -5,7 +5,7 @@
 
     Layout:  1440px wide, white bg, padding 80px top/bottom
     Colors:  #1A1A1A headings, #8A8A8A meta, #D94035 category labels
-    Fonts:   font-display (Playfair Display), font-body (Barlow)
+    Fonts:   font-display (Instrument Serif), font-body (Instrument Sans)
     Matches: featured-works.blade.php structure & ecosystem.blade.php eyebrow pattern
 --}}
 
@@ -55,7 +55,7 @@ $articles ??= [
                 </p>
 
                 {{-- Heading — italic display, dark, left-aligned --}}
-                <h2 id="insights-heading" class="insights-heading font-display font-bold italic leading-[1.0] tracking-tight text-[#1A1A1A] m-0">
+                <h2 id="insights-heading" class="insights-heading font-display font italic leading-[1.0] tracking-tight text-[#1A1A1A] m-0">
                     {{ $headingItalic }}
                 </h2>
             </div>
@@ -108,7 +108,7 @@ $articles ??= [
                 </div>
 
                 {{-- Title --}}
-                <h3 class="font-display font-bold text-[22px] leading-[1.2] tracking-tight text-[#1A1A1A] m-0 mb-3
+                <h3 class="font-body font text-[22px] leading-[1.2] tracking-tight text-[#1A1A1A] m-0 mb-3
                            group-hover:text-[#C0392B] transition-colors duration-250">
                     {{ $article['title'] }}
                 </h3>
