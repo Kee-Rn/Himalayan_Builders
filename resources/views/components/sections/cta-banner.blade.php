@@ -36,7 +36,7 @@ $ctaSecondary  ??= ['label' => 'DOWNLOAD PORTFOLIO',  'url' => '#portfolio'];
     <div class="absolute inset-0 bg-[#D94035]/85"></div>
 
     {{-- Content --}}
-    <div class="relative z-10 max-w-[1344px] mx-auto px-12 flex flex-col justify-center h-full gap-10" style="min-height: 176px;">
+    <div class="relative z-10 max-w-[1344px] mx-auto px-12 flex flex-col items-center justify-center h-full gap-10 text-center" style="min-height: 176px;">
 
         {{-- Heading --}}
         <h2 class="cta-heading font leading-[1.0] tracking-tight text-white m-0">
