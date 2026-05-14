@@ -92,7 +92,7 @@
             aria-label="Himalayan Design Build — Home"
         >
             <img
-                src="{{ asset('images/logo.svg') }}"
+                src="{{ asset('images/logos/logo.svg') }}"
                 alt="Himalayan Builders & Engineers"
                 class="h-10 w-auto"
                 onerror="this.style.display='none'"

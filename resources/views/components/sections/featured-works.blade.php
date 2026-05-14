@@ -50,7 +50,7 @@
             style="min-height: 540px;"
         >
             <img
-                src="{{ $featured['image'] ?? asset('images/portfolio/soaltee.jpg') }}"
+                src="{{ $imageSrc ?? asset('images/soaltee.png') }}"
                 alt="{{ $featured['title'] ?? 'Featured project' }}"
                 class="fw-card__img absolute inset-0 w-full h-full object-cover object-center"
                 loading="lazy"
@@ -89,7 +89,7 @@
                 style="min-height: 258px;"
             >
                 <img
-                    src="{{ $project['image'] ?? asset('images/portfolio/default.jpg') }}"
+                    src="{{ $imageSrc ?? asset('images/dusit.png') }}"
                     alt="{{ $project['title'] ?? 'Project' }}"
                     class="fw-card__img absolute inset-0 w-full h-full object-cover object-center"
                     loading="lazy"

@@ -49,18 +49,18 @@ $clients ??= [
         </p>
 
         {{-- Heading --}}
-        <h2 id="trust-heading" class="trust-heading font leading-[1.05] tracking-tight text-center m-0 mb-14">
+        <h2 id="trust-heading" class="trust-heading fontleading-[1.05] tracking-tight text-center m-0 mb-14">
             <span class="font-body text-[#1a1a1a] not-italic">{{ $headingNormal }} </span><em class="font-display text-[#C0392B] italic">{{ $headingItalic }}</em>
         </h2>
 
         {{-- Logo Grid --}}
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 px-4 lg:px-0">
             @foreach ($clients as $client)
-            <div class="trust-card group flex items-center justify-center bg-white border border-[#e8e8e8] rounded-xl p-6 min-h-[120px] transition-shadow duration-300 hover:shadow-md">
+            <div class="trust-card group flex items-center justify-center bg-white border border-[#e8e8e8] rounded-xl p-8 min-h-[190px] transition-shadow duration-300 hover:shadow-md">
                 <img
                     src="{{ $client['image'] }}"
                     alt="{{ $client['name'] }}"
-                    class="trust-logo h-12 w-auto max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                    class="trust-logo h-28 w-auto max-w-[80%] object-contain invert grayscale group-hover:grayscale-0 transition-all duration-300"
                     loading="lazy"
                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
                 />

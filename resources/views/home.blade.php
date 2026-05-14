@@ -167,12 +167,12 @@
     'headingNormal' => 'Trusted by',
     'headingItalic' => 'World Institutions.',
     'clients' => [
-        ['name' => 'US Army Corps of Engineers',       'image' => asset('images/logos/usace.png')],
-        ['name' => 'U.S. Department of State (OBO)',   'image' => asset('images/logos/us-state-dept.png')],
-        ['name' => 'NAVFAC',                           'image' => asset('images/logos/navfac.png')],
-        ['name' => 'TATA',                             'image' => asset('images/logos/tata.png')],
-        ['name' => 'The Soaltee Kathmandu',            'image' => asset('images/logos/soaltee.png')],
-        ['name' => 'Sipradi',                          'image' => asset('images/logos/sipradi.png')],
+        ['name' => 'US Army Corps of Engineers',       'image' => asset('images/logos/image 5.png')],
+        ['name' => 'U.S. Department of State (OBO)',   'image' => asset('images/logos/image 6.png')],
+        ['name' => 'NAVFAC',                           'image' => asset('images/logos/image 7.png')],
+        ['name' => 'TATA',                             'image' => asset('images/logos/image 8.png')],
+        ['name' => 'The Soaltee Kathmandu',            'image' => asset('images/logos/image 9.png')],
+        ['name' => 'Sipradi',                          'image' => asset('images/logos/image 10.png')],
     ],
 ])
 
@@ -217,7 +217,7 @@
 ])
 
 @include('components.sections.footer', [
-    'logoSrc' => asset('images/logo.png'),
+    'logoSrc' => asset('images/logos/logo.svg'),
     'contact' => [
         'heading' => 'GET IN TOUCH',
         'address' => 'Bhakti Thapa Sadak-45 KMC – 11, Babarmahal, Kathmandu, Nepal',
