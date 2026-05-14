@@ -54,7 +54,7 @@
             {{-- Building image — fixed 380px tall --}}
             <div class="w-full rounded-[20px] overflow-hidden about-img-wrap" style="height:380px;">
                 <img
-                    src="{{ asset('photos/1.png') }}"
+                    src="{{ asset('images/1.png') }}"
                     alt="{{ $imageAlt ?? 'Himalayan Builders & Engineers building' }}"
                     class="w-full h-full object-cover object-center block about-img"
                     loading="lazy"

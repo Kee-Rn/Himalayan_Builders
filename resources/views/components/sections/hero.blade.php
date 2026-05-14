@@ -28,7 +28,7 @@
             class="absolute inset-0"
             style="background: linear-gradient(
                 180deg,
-                rgba(255,255,255,1.00)  8%,
+                rgba(255,255,255,1.00)  5%,
                 rgba(255,255,255,0.00) 20%,
                 rgba(255,255,255,0.00) 65%,
                 rgba(255,255,255,0.80) 85%,

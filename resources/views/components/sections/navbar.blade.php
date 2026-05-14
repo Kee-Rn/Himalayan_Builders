@@ -77,42 +77,26 @@
 
 <header
     class="w-full absolute top-0 left-0 z-50 bg-gradient-to-b from-black/85 to-black/0"
-    {{-- Note: gradient via inline style as Tailwind CDN doesn't support arbitrary gradient-from/to with rgba stops --}}
 >
     <nav
         class="max-w-[1440px] mx-auto px-8 lg:px-12
                flex items-center justify-between
-               h-[97px]"
+               h-[70px]"
         aria-label="Main navigation"
     >
 
         {{-- Logo --}}
         <a
             href="{{ $logoUrl ?? '/' }}"
-            class="flex items-center gap-3 shrink-0 no-underline group"
+            class="flex items-center shrink-0 no-underline group"
             aria-label="Himalayan Design Build — Home"
         >
-            {{-- Icon mark --}}
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M4 28 L12 10 L18 20 L24 10 L32 28Z" fill="none" stroke="#C0392B" stroke-width="2.5" stroke-linejoin="round"/>
-                <path d="M4 28 L32 28" stroke="#C0392B" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-
-            {{-- Wordmark + tagline --}}
-            <div class="flex flex-col leading-none">
-                <span
-                    class="font-display font-bold text-white tracking-wide uppercase"
-                    style="font-size: 13px; letter-spacing: 0.15em;"
-                >
-                    HIMALAYAN
-                </span>
-                <span
-                    class="font-body font-semibold text-white/50 uppercase"
-                    style="font-size: 9px; letter-spacing: 0.22em; margin-top: 4px;"
-                >
-                    A-CLASS&nbsp;&nbsp;DESIGN-BUILD
-                </span>
-            </div>
+            <img
+                src="{{ asset('images/logo.svg') }}"
+                alt="Himalayan Builders & Engineers"
+                class="h-10 w-auto"
+                onerror="this.style.display='none'"
+            />
         </a>
 
         {{-- Divider (desktop) --}}
