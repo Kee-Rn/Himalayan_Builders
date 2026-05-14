@@ -22,9 +22,9 @@
 
                 {{-- Heading --}}
                 <div class="flex flex-col gap-0">
-                    <h2 id="eco-heading" class="eco-heading font-display font-bold leading-[1.05] tracking-tight m-0">
-                        <span class="text-[#1a1a1a] not-italic block">{{ $headingNormal ?? 'The Himalayan' }}</span>
-                        <em class="text-[#C0392B] italic block">{{ $headingItalic ?? 'Ecosystem.' }}</em>
+                    <h2 id="eco-heading" class="eco-heading font leading-[1.05] tracking-tight m-0">
+                        <span class="font-body text-[#1a1a1a] not-italic block">{{ $headingNormal ?? 'The Himalayan' }}</span>
+                        <em class="font-display text-[#C0392B] italic block">{{ $headingItalic ?? 'Ecosystem.' }}</em>
                     </h2>
                 </div>
 
@@ -83,15 +83,15 @@
                                 </svg>
                             </div>
                             <div class="flex flex-col leading-tight">
-                                <span class="font-display font-bold text-[22px] text-[#C0392B] leading-none">{{ $companies[0]['logoLine1'] ?? 'Himalayan' }}</span>
-                                <span class="font-display font-bold text-[22px] text-white leading-none">{{ $companies[0]['logoLine2'] ?? 'Brick' }}</span>
+                                <span class="font-display font text-[22px] text-[#C0392B] leading-none">{{ $companies[0]['logoLine1'] ?? 'Himalayan' }}</span>
+                                <span class="font-display font text-[22px] text-white leading-none">{{ $companies[0]['logoLine2'] ?? 'Brick' }}</span>
                             </div>
                         </div>
                     </div>
 
                     {{-- Bottom info --}}
                     <div class="absolute bottom-0 left-0 right-0 p-8">
-                        <h3 id="eco-card-title" class="font-display text-white font-bold text-[28px] leading-[1.1] m-0 mb-3">
+                        <h3 id="eco-card-title" class="font-display text-white font text-[28px] leading-[1.1] m-0 mb-3">
                             {{ $companies[0]['title'] ?? 'Himalayan Bricks' }}
                         </h3>
                         <p id="eco-card-desc" class="font-body text-[14px] leading-[1.65] text-white/70 m-0 max-w-[420px]">
