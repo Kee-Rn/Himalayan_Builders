@@ -17,8 +17,8 @@
             <p class="font-body text-[11px] font-semibold tracking-[0.22em] uppercase text-[#C0392B] mb-3 m-0">
                 {{ $eyebrow ?? 'FEATURED WORK' }}
             </p>
-            <h2 id="fw-heading" class="fw-heading font-display font-bold leading-[1.0] tracking-tight m-0">
-                <span class="text-[#1a1a1a] not-italic">{{ $headingNormal ?? 'Iconic' }} </span><em class="text-[#C0392B] italic">{{ $headingItalic ?? 'Structures.' }}</em>
+            <h2 id="fw-heading" class="fw-heading font leading-[1.0] tracking-tight m-0">
+                <span class="font-body text-[#1a1a1a] not-italic">{{ $headingNormal ?? 'Iconic' }} </span><em class="font-display text-[#C0392B] italic">{{ $headingItalic ?? 'Structures.' }}</em>
             </h2>
         </div>
 
@@ -68,7 +68,7 @@
 
             {{-- Bottom info --}}
             <div class="absolute bottom-0 left-0 right-0 p-8">
-                <h3 class="font-display text-white font-bold text-[36px] leading-[1.1] m-0 mb-2">
+                <h3 class="font-display text-white font text-[36px] leading-[1.1] m-0 mb-2">
                     {{ $featured['title'] ?? 'Soaltee Sibkrim Hotel' }}
                 </h3>
                 @if(!empty($featured['meta']))
@@ -97,7 +97,7 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
 
                 <div class="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 class="font-display text-white font-bold text-[22px] leading-[1.1] m-0 mb-1">
+                    <h3 class="font-display text-white font text-[22px] leading-[1.1] m-0 mb-1">
                         {{ $project['title'] ?? 'Project Name' }}
                     </h3>
                     @if(!empty($project['category']))
