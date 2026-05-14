@@ -17,9 +17,9 @@
             </p>
 
             {{-- Heading — uses .about-heading-fluid defined in home.blade.php <style> --}}
-            <h2 id="about-heading" class="about-heading-fluid font-display font-bold leading-[1.0] tracking-tight m-0">
-                <span class="text-[#1a1a1a] not-italic">{{ $headingNormal ?? 'Pioneering' }} </span><em class="text-[#C0392B] italic">{{ $headingItalic ?? 'Design,' }}</em><br>
-                <em class="text-[#C0392B] italic">{{ $headingItalic2 ?? 'Build' }}</em><span class="text-[#1a1a1a] not-italic"> {{ $headingEnd ?? 'Excellence in Nepal.' }}</span>
+            <h2 id="about-heading" class="about-heading-fluid font leading-[1.0] tracking-tight m-0">
+                <span class="font-body text-[#1a1a1a] not-italic">{{ $headingNormal ?? 'Pioneering' }} </span><em class="font-display text-[#C0392B] italic">{{ $headingItalic ?? 'Design,' }}</em><br>
+                <em class="font-display text-[#C0392B] italic">{{ $headingItalic2 ?? 'Build' }}</em><span class="font-body text-[#1a1a1a] not-italic"> {{ $headingEnd ?? 'Excellence in Nepal.' }}</span>
             </h2>
 
             {{-- Body --}}
@@ -68,7 +68,7 @@
                 <div class="rounded-[20px] bg-white/60 backdrop-blur-sm border border-white/80
                             flex flex-col justify-end gap-[10px] p-7"
                      style="min-height:170px;">
-                    <span class="font-display text-[48px] font-bold leading-none tracking-tight text-[#C0392B]">
+                    <span class="font-display text-[48px] font leading-none tracking-tight text-[#C0392B]">
                         {{ $badgeNumber ?? '01' }}
                     </span>
                     <span class="font-body text-[10px] font-semibold tracking-[0.18em] uppercase text-[#888]">
@@ -80,7 +80,7 @@
                 <div class="rounded-[20px] bg-[#C0392B]
                             flex flex-col justify-end gap-[10px] p-7"
                      style="min-height:170px;">
-                    <span class="font-display text-[48px] font-bold leading-none tracking-tight text-white">
+                    <span class="font-display text-[48px] font leading-none tracking-tight text-white">
                         {{ $ratingLabel ?? 'A-Class' }}
                     </span>
                     <span class="font-body text-[10px] font-semibold tracking-[0.18em] uppercase text-white/70">

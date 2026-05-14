@@ -46,11 +46,11 @@
         {{-- Left: Heading + CTAs --}}
         <div class="flex flex-col gap-10 shrink-0">
 
-            <h1 class="font-display hero-heading-fluid leading-none tracking-tight m-0 flex flex-col">
-                <span class="font-bold not-italic text-[#1a1a1a]">
+            <h1 class="hero-heading-fluid leading-none tracking-tight m-0 flex flex-col">
+                <span class="font-body font not-italic text-[#1a1a1a]">
                     {{ $heading ?? 'Building' }}
                 </span>
-                <em class="font-bold italic text-[#C0392B] -mt-1">
+                <em class="font-display font italic text-[#C0392B] -mt-1">
                     {{ $headingItalic ?? 'Excellence.' }}
                 </em>
             </h1>

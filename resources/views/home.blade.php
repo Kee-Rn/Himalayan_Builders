@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -16,8 +16,8 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        display: ['Playfair Display', 'Georgia', 'serif'],
-                        body:    ['Barlow', 'sans-serif'],
+                        display: ['Instrument Serif', 'Georgia', 'serif'],
+                        body:    ['Instrument Sans', 'sans-serif'],
                     },
                     colors: {
                         accent:         '#C0392B',
@@ -30,8 +30,8 @@
     </script>
 
     <style>
-        .font-display { font-family: 'Playfair Display', Georgia, serif; }
-        .font-body    { font-family: 'Barlow', sans-serif; }
+        .font-display { font-family: 'Instrument Serif', Georgia, serif; }
+        .font-body    { font-family: 'Instrument Sans', sans-serif; }
         .hero-heading-fluid { font-size: clamp(64px, 8vw, 110px); }
         .hero-video {
             position: absolute; inset: 0;
