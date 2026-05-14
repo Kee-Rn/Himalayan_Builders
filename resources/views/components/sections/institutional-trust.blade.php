@@ -4,7 +4,7 @@
     Include:  @include('components.sections.institutional-trust', [...])
 
     Layout: 1344px wide, #F5F4F3 bg, padding 80px top/bottom
-    Matches: ecosystem.blade.php patterns (font-display, font-body, #C0392B, #1a1a1a)
+    Matches: ecosystem.blade.php patterns (font-display: Instrument Serif, font-body: Instrument Sans, #C0392B, #1a1a1a)
 --}}
 
 @php
@@ -49,8 +49,8 @@ $clients ??= [
         </p>
 
         {{-- Heading --}}
-        <h2 id="trust-heading" class="trust-heading font-display font-bold leading-[1.05] tracking-tight text-center m-0 mb-14">
-            <span class="text-[#1a1a1a] not-italic">{{ $headingNormal }} </span><em class="text-[#C0392B] italic">{{ $headingItalic }}</em>
+        <h2 id="trust-heading" class="trust-heading font leading-[1.05] tracking-tight text-center m-0 mb-14">
+            <span class="font-body text-[#1a1a1a] not-italic">{{ $headingNormal }} </span><em class="font-display text-[#C0392B] italic">{{ $headingItalic }}</em>
         </h2>
 
         {{-- Logo Grid --}}
