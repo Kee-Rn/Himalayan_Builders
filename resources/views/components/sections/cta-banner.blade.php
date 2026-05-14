@@ -4,7 +4,7 @@
     Include:  @include('components.sections.cta-banner', [...])
 
     Layout:  1440px wide, #D94035 bg, padding 80px top/bottom, height 336px
-    Fonts:   font-display (Playfair Display), font-body (Barlow)
+    Fonts:   font-display (Instrument Serif), font-body (Instrument Sans)
     Matches: ecosystem/featured-works eyebrow + heading patterns
 --}}
 
@@ -39,9 +39,9 @@ $ctaSecondary  ??= ['label' => 'DOWNLOAD PORTFOLIO',  'url' => '#portfolio'];
     <div class="relative z-10 max-w-[1344px] mx-auto px-12 flex flex-col justify-center h-full gap-10" style="min-height: 176px;">
 
         {{-- Heading --}}
-        <h2 class="cta-heading font-display font-bold leading-[1.0] tracking-tight text-white m-0">
-            <span class="not-italic block">{{ $headingNormal }}</span>
-            <em class="italic block">{{ $headingItalic }}</em>
+        <h2 class="cta-heading font leading-[1.0] tracking-tight text-white m-0">
+            <span class="font-body not-italic block">{{ $headingNormal }}</span>
+            <em class="font-display italic block">{{ $headingItalic }}</em>
         </h2>
 
         {{-- CTAs --}}
