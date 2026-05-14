@@ -77,7 +77,7 @@
 
 <header
     class="w-full absolute top-0 left-0 z-50"
-    style="background: transparent; border-bottom: 1px solid rgba(255,255,255,0.08);"
+    style="background: linear-gradient(180deg, rgba(10,10,10,0.60) 0%, rgba(10,10,10,0.00) 100%); border-bottom: 1px solid rgba(255,255,255,0.08);"
 >
     <nav
         class="max-w-[1440px] mx-auto px-8 lg:px-12

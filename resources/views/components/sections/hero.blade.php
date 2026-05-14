@@ -23,16 +23,15 @@
             <source src="{{ $videoSrc ?? '' }}" type="video/mp4" />
         </video>
 
-        {{-- White gradient fade top and bottom --}}
+        {{-- Gradient: tiny white fade at top (navbar area only), soft white fade at bottom --}}
         <div
             class="absolute inset-0"
             style="background: linear-gradient(
                 180deg,
-                rgba(255,255,255,1.00)  0%,
-                rgba(255,255,255,0.80) 20%,
-                rgba(255,255,255,0.00) 50%,
-                rgba(255,255,255,0.00) 50%,
-                rgba(255,255,255,0.80) 80%,
+                rgba(255,255,255,1.00)  8%,
+                rgba(255,255,255,0.00) 20%,
+                rgba(255,255,255,0.00) 65%,
+                rgba(255,255,255,0.80) 85%,
                 rgba(255,255,255,1.00) 100%
             );"
         ></div>
