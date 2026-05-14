@@ -8,7 +8,7 @@
 
 <section
     class="relative w-full overflow-hidden flex items-end"
-    style="min-height: 716.8px; padding-top: 97px;"
+    style="min-height: 716.8px; padding-top: 97px; background-color: #c8dce8;"
 >
     {{-- Navbar overlaid on top of hero --}}
     @include('components.sections.navbar')
@@ -23,23 +23,17 @@
             <source src="{{ $videoSrc ?? '' }}" type="video/mp4" />
         </video>
 
+        {{-- White gradient fade top and bottom --}}
         <div
             class="absolute inset-0"
             style="background: linear-gradient(
                 180deg,
-                rgba(10,10,10,1.00)   0%,
-                rgba(10,10,10,0.00)  50%,
-                rgba(10,10,10,0.00) 100%
-            );"
-        ></div>
-        {{-- Bottom dark fade --}}
-        <div
-            class="absolute inset-0"
-            style="background: linear-gradient(
-                0deg,
-                rgba(10,10,10,1.00)   0%,
-                rgba(10,10,10,0.00)  50%,
-                rgba(10,10,10,0.00) 100%
+                rgba(255,255,255,1.00)  0%,
+                rgba(255,255,255,0.80) 20%,
+                rgba(255,255,255,0.00) 50%,
+                rgba(255,255,255,0.00) 50%,
+                rgba(255,255,255,0.80) 80%,
+                rgba(255,255,255,1.00) 100%
             );"
         ></div>
     </div>
@@ -56,10 +50,10 @@
         <div class="flex flex-col gap-10 shrink-0">
 
             <h1 class="hero-heading-fluid leading-none tracking-tight m-0 flex flex-col">
-                <span class="font-body font not-italic text-[#1a1a1a]">
+                <span class="font-body font-bold not-italic text-[#1a1a1a]">
                     {{ $heading ?? 'Building' }}
                 </span>
-                <em class="font-display font italic text-[#C0392B] -mt-1">
+                <em class="font-display font-bold italic text-[#C0392B] -mt-1">
                     {{ $headingItalic ?? 'Excellence.' }}
                 </em>
             </h1>
